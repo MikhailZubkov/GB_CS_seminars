@@ -14,25 +14,13 @@ Console.WriteLine("Введите второе число");
 string number2str = Console.ReadLine();
 int b = Convert.ToInt32(number2str);
 
-Console.WriteLine("Введите третье число");
-string number3str = Console.ReadLine();
-int c = Convert.ToInt32(number3str);
-
-int nmax = a;
-
-if (nmax > b)
+if (a > b)
 {
-   nmax = a; 
-    }
- else
-{
-    nmax = b;
-}    
-if (nmax > c)
-{
-    Console.WriteLine($"Наибольшее число равно {nmax}");
+    Console.WriteLine($"Наибольшее число равно {a}");
+    Console.WriteLine($"Наименьшее число равно {b}");
 }
 else
 {
-    Console.WriteLine($"Наибольшее число равно {c}");
+    Console.WriteLine($"Наибольшее число равно {b}");
+    Console.WriteLine($"Наименьшее число равно {a}");
 }
